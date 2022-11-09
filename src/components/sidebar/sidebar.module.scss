@@ -1,0 +1,76 @@
+.wrapper {
+  @apply w-full h-[100vh] flex relative;
+  .right {
+    @apply w-full flex justify-start max-h-[100vh] relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .main {
+    @apply z-50 flex;
+    .Extendsidebar {
+      @apply min-w-[200px] max-w-[200px] bg-[#0c1224b9] min-h-full absolute left-[70px] top-0 flex flex-col justify-between items-start;
+      .heading {
+        @apply text-white flex items-center gap-x-4  font-semibold text-2xl py-8 pl-1;
+        .icon {
+          @apply text-xl cursor-pointer ;
+        }
+      }
+      .links {
+        @apply w-full flex flex-col items-center pb-11;
+        .text {
+          @apply text-white text-sm text-left px-3;
+          word-break: break-all;
+        }
+        .icon {
+          @apply w-full flex justify-between items-center px-3 py-6;
+          p {
+            @apply text-sm text-pink-700;
+          }
+          .selectimage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            .edit {
+              @apply text-white text-center;
+            }
+          }
+        }
+        .email {
+          @apply w-full text-left px-3;
+          p {
+            @apply text-[0.8rem] text-sky-600;
+          }
+        }
+      }
+    }
+    .sidebar {
+      @apply min-w-[70px] bg-[#010519bf] flex flex-col items-center justify-between min-h-full absolute left-0 top-0;
+      backdrop-filter: blur(2px);
+      .links {
+        @apply w-full flex flex-col items-center;
+        .firsticon {
+          @apply w-full flex justify-center pt-6 pb-2;
+          img {
+            @apply max-w-[40px] cursor-pointer;
+          }
+        }
+        .icon {
+          @apply w-full flex justify-center p-2 py-6;
+          img {
+            @apply max-w-[200px] cursor-pointer;
+          }
+        }
+        .editImage{
+          @apply w-[32px] h-[32px] rounded-full overflow-hidden cursor-pointer flex justify-center items-center;
+          img{
+      @apply h-full;
+        max-width:none
+          }
+        }
+      }
+    }
+  }
+}

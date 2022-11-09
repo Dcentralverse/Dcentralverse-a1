@@ -1,0 +1,114 @@
+.wrapper {
+  @apply w-full flex flex-col items-center px-2 py-6 md:px-4;
+  .heading {
+    @apply w-full text-left -mt-4 text-white text-lg md:text-xl font-semibold;
+  }
+  .profile {
+    @apply w-full flex mt-6 pb-0;
+    .left {
+      @apply w-[20%] md:w-[25%] flex justify-center;
+      label {
+        @apply w-full  flex justify-center;
+        .profile {
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
+          position: relative;
+          background-color: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          overflow: hidden;
+          box-sizing: border-box;
+          @media screen and (max-width: 786px) {
+            width: 50px;
+            height: 50px;
+          }
+          .profileImage {
+            max-width: none;
+            height: 100%;
+            border-radius: 100%;
+            background-size: fill;
+          }
+
+          .editprofile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            text-align: center;
+            background-color: #0000006f;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 15%;
+            top: 50%;
+            @media screen and (max-width: 786px) {
+              width: 20px;
+              height: 20px;
+            }
+            input {
+              display: none;
+            }
+            .selectimage {
+              width: 20px;
+              height: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              .icon {
+                @apply text-white text-center;
+              }
+            }
+          }
+        }
+      }
+    }
+    .right {
+      @apply w-[75%] p-0;
+      .formsection {
+        @apply w-full px-2 flex flex-col items-center gap-y-2;
+        .inputdiv {
+          @apply w-full flex flex-col p-0;
+          .parentInputDiv {
+            @apply w-full p-1 text-gray-400 border border-gray-400 rounded-md;
+            input {
+              @apply w-full  text-sm outline-none bg-transparent py-1  text-white;
+            }
+            textarea {
+              @apply w-full  text-sm outline-none bg-transparent py-1  text-white;
+            }
+            .copied {
+              @apply w-full flex  gap-x-1 md:gap-x-3 items-center text-sm;
+              p {
+                @apply text-white text-sm py-1 w-[180px] md:w-full overflow-hidden overflow-ellipsis;
+              }
+              label {
+                .icon {
+                  @apply text-white  text-sm md:text-xl;
+                }
+              }
+            }
+          }
+          .error {
+            @apply text-[red] text-sm;
+          }
+        }
+        .sendemail {
+          @apply w-full h-10 gap-x-4 flex items-center justify-start gap-y-1;
+          input {
+            @apply outline-none h-8 bg-transparent py-5 text-white  border-[#FFC42A] border-b;
+          }
+          label {
+            @apply text-sm md:text-lg text-gray-400;
+          }
+        }
+        .signupbtn {
+          @apply w-full mt-10 flex justify-end text-center rounded-sm cursor-pointer;
+        }
+      }
+    }
+  }
+}

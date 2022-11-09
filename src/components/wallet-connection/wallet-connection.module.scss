@@ -1,0 +1,69 @@
+.wrapper {
+  @apply w-full pb-6 px-4 py-6 md:px-8;
+  .heading {
+    @apply w-full text-left -mt-3 text-white mb-10 font-semibold  text-lg md:text-xl;
+  }
+  .subheading {
+    @apply w-full text-left text-white mb-6 text-sm;
+    .tooltip {
+      @apply text-blue-600 cursor-pointer relative;
+      display: inline-block;
+      .tooltiptext {
+        width: 250px;
+        visibility: hidden;
+        background-color: #061723;
+        color: white;
+        padding: 1px 0px;
+        position: absolute;
+        z-index: 1;
+      }
+      .tooltiptext {
+        left: -150%;
+        top: 120%;
+        text-align: center;
+        border-radius: 10px;
+        font-family: Montserrat;
+        font-style: Regular;
+        font-size: 10px;
+        line-height: 17px;
+        padding: 5px 3px !important;
+      }
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+  }
+  .connectCard {
+    @apply w-full mt-4 flex items-center justify-center h-12 bg-white rounded-md cursor-pointer shadow-md;
+    .buttonInfo {
+      @apply flex items-center justify-center gap-2;
+      .icon {
+        @apply h-4 text-center;
+      }
+      .text {
+        @apply text-xs text-center;
+      }
+    }
+  }
+  .walletConnectCard {
+    @apply w-full mt-4 flex items-center justify-center h-12 bg-blue-800 text-white rounded-md cursor-pointer shadow-md;
+    .buttonInfo {
+      @apply flex items-center justify-center gap-2;
+      .icon {
+        @apply h-4 text-center;
+      }
+      .text {
+        @apply text-xs text-center;
+      }
+    }
+  }
+  .more {
+    @apply w-full text-left mt-6 text-white mb-0  text-sm;
+    a {
+      @apply text-blue-600 font-semibold;
+    }
+  }
+}
+.btn {
+  @apply w-full flex justify-end pr-6 pb-4;
+}
