@@ -3,8 +3,8 @@ export const POLYGON_NETWORK = {
 };
 
 // export const BASE_URL = "http://localhost:3000/"
-// export const BASE_URL = " http://3.101.105.250/"
-export const BASE_URL = "https://9682-115-167-65-191.in.ngrok.io/"
+export const BASE_URL = " http://34.205.225.239:3000/";
+// export const BASE_URL = "https://9682-115-167-65-191.in.ngrok.io/"
 
 // export const BNB_NETWORK = {
 //   chainId: "0x61",
